@@ -1,0 +1,190 @@
+{%extends 'layout/layout.html'%}
+{%load static%}
+{%block section%}
+    <!-- about section desing -->
+    <section class="about" id="about">
+        <h2 class="heading">A propos de<span> Moi</span><span class="animate scroll" style="--i:1"></span></h2>
+
+        <div class="about-img">
+            <img src="{%static 'assets/img/about.jpg'%}" alt="">
+            <span class="circle-spin"></span>
+            <span class="animate scroll" style="--i:2"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>Designer UI/UX & Analyste Programmeur<span class="animate scroll" style="--i:3"></span></h3>
+            <p>Développer des applications web ou mobile etc. Intéressants avec du contenu qui donne envie 
+                n'est pas forcément facile quand ce n'est pas notre métier. 
+                Heureusement pour vous, c'est le mien. Alors n'hésitez pas à me contacter
+                <span class="animate scroll" style="--i:4"></span>
+            </p>
+
+            <div class="btn-box btns">
+                <a href="{%url 'about'%}" class="btn">En savoir plus</a>
+                <span class="animate scroll" style="--i:5"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- education section design -->
+    <section class="education" id="education">
+        <h2 class="heading">Mon <span>Parcours</span><span class="animate scroll" style="--i:1"></span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education<span class="animate scroll" style="--i:2"></span></h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar' ></i>2017 - 2018</div>
+                            <h3>BAC - Avenir</h3>
+                            <p>
+                                Il sanctionne la fin des études dites secondaires (le lycée) et qu'il ouvre, par son obtention, l'accès aux
+                                différentes fillières de l'enseignement supérieur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar' ></i>2018 - 2019</div>
+                            <h3>DELF B2 - Institut française, Kin-RDC</h3>
+                            <p>Diplôme d'études en langue française (DELF) de niveau intermédiaire (B2).
+                                C'est le quatrième niveau de langue sur six mis en place par le Cadre Européen Commun de Référence pour les 
+                                Langues (CECR).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar' ></i>2019 - 2022</div>
+                            <h3>Gradué En informatique - ISIPA kin</h3>
+                            <p>
+                                Il désigne tout programme universitaire plus avancé que le baccalauréat, donc le
+                                certificat d'études supérieures et la maîtrise (deuxième cycle) ainsi que le doctorat (trosième cycle),
+                                ou encore l'ensemble de ces programmes et cycle d'études.
+                            </p>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:3"></span>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title">Experience<span class="animate scroll" style="--i:5"></span></h3>
+
+                <div class="education-box">
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar' ></i>2020 - 2021</div>
+                            <h3>Développeur - Débutant</h3>
+                            <p>
+                                j'ai été durant un bref délai, un développeur débutant dans un groupe (start up),
+                                nommé GwothSoft, Kinshasa. RDC. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar' ></i>2022</div>
+                            <h3>Stage académique - Informatique</h3>
+                            <p>
+                                j'ai fais un stage académique au seins de la Direction Générale des Recettes Admistratives,
+                                Judiciaires, Domaniales Et de Participations. (DGRAD)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar' ></i>2023 - Présent</div>
+                            <h3>Développeur - Junior</h3>
+                            <p>Je suis actuellment un dev junior dans <a href="http://kembocorporation.com"><span>Kembo corporation</span></a> une entreprise
+                                multisectorielle sous la forme juridique S.A.S (société par actions simplifiée) dont
+                                le secteur d'activité principal est la mise en place des projets informatique dans le but
+                                d'automatiser différentes tâches de l'entreprise.
+                            </p>
+                        </div>
+                    </div>
+
+                    <span class="animate scroll" style="--i:6"></span>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Mes <span>Compétences</span><span class="animate scroll" style="--i:1"></span></h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Compétence de codage<span class="animate scroll" style="--i:2"></span></h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>PHP <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>CSS <span>65%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>JavaScript <span>50%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Python <span>55%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                    <span class="animate scroll" style="--i:3"></span>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Compétence Professionnel <span class="animate scroll" style="--i:5"></span></h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Développement <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Web Marketing <span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Designer UI/UX <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>SEO Marketing <span>50%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                    <span class="animate scroll" style="--i:6"></span>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+{%endblock%}

@@ -1,0 +1,75 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mich - Mav | Portfolio</title>
+    <link rel="stylesheet" href="{%static 'assets/css/style.Css'%}">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    
+   {% include '../partials/header.html' %}
+    <!-- home section design -->
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <h1>Mon Nom, Est <span>Mich Mav</span><span class="animate" style="--i:2"></span></h1>
+            <div class="text-animate">
+                <h3>Développeur full-stack</h3>
+                <span class="animate" style="--i:3"></span>
+            </div>
+            <p>Développer des applications web ou mobile etc. Intéressants avec du contenu qui dionne 
+                envie n'est pas forcément facile quand ce n'est pas notre métier. 
+                Heureusement pour vous, c'est le mien. Alors n'hésitez pas à me contacter
+                <span class="animate" style="--i:4"></span>
+            </p>
+
+            <div class="btn-box">
+                <a href="{% url 'realisation'%}" class="btn">Mes Réalisation</a>
+                <a href="{% url 'service'%}" class="btn">Mes Services</a>
+                <span class="animate" style="--i:5"></span>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://facebook.com/Micheemav" title="Facebook"><i class='bx bxl-facebook'></i></a>
+            <a href="https://twitter.com/Michmav2?t=TRBGUWdpjwgEGqsGevxKIg&s=09" title="Twitter"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://github.com/hakashimav" title="Github"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/mich-mav-55a512216" title="Linkedin"><i class='bx bxl-linkedin' ></i></a>
+            <span class="animate" style="--i:6"></span>
+        </div>
+
+        <div class="home-imgHover"></div>
+        <span class="animate home-img" style="--i:7"></span>
+    </section>
+
+    {%block section%}
+    {%endblock%}
+
+   {% include '../partials/contact.html' %}
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by MichMav | All Rights Reserved.</p>
+
+            <span class="animate scroll" style="--i:1"></span>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+
+            <span class="animate scroll" style="--i:3"></span>
+        </div>
+    </footer>
+
+
+    <script src="{%static 'assets/js/script.js'%}"></script>
+</body>
+
+</html>

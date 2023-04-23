@@ -1,0 +1,33 @@
+{%extends 'layout/layout.html'%}
+{%load static%}
+{%block section%}
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Mes <span>Réalisations</span><span class="animate scroll" style="--i:1"></span></h2>
+
+        <div class="skills-row">
+            <div class="skills-column">
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <h2 class="heading">Ongd apped</h2>
+                        <img src="{%static 'assets/img/ongd.jpg'%}" alt="" srcset="" class="img-realisation">
+                    </div>
+                    <span class="animate scroll" style="--i:3"></span>
+                </div>
+            </div>
+
+            <div class="skills-column">
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <h2 class="heading">Gestion de personnelle</h2>
+                        <img src="{%static 'assets/img/Gestion.jpg'%}" alt="" srcset="" class="img-realisation">
+                    </div>
+                    <span class="animate scroll" style="--i:6"></span>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+{%endblock%}

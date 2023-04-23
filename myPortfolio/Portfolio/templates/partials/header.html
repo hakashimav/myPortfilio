@@ -1,0 +1,55 @@
+ <!-- header design -->
+ <header class="header">
+    <a href="/" class="logo" title="Accueil">Mich.<span class="animate" style="--i:1"></span></a>
+
+    <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2"></span></div>
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+
+        {%if about %}
+            <a href="#about">{{ about }}</a>
+        {%else%}
+
+            {%if realisation or service%}
+
+            {%else%}
+                <a href="#about">A propos</a>
+            {%endif%}
+
+        {%endif%}
+
+        {%if about%}
+            <a href="#education">Information</a>
+        {%else%}
+
+            {%if service%}
+                <a href="#education">{{ service }}</a>
+            {%else%}
+
+                {%if realisation or about or service%}
+
+                {%else%}
+                <a href="#education">Education</a>
+                {%endif%}
+
+            {%endif%}
+
+        {%endif%}
+
+        {%if realisation%}
+            <a href="#skills">{{ realisation }}</a>
+        {%else%}
+
+            {%if service or about%}
+
+            {%else%}
+                <a href="#skills">Compétences</a>
+            {%endif%}
+            
+        {%endif%}
+        <a href="#contact">Contact</a>
+
+        <span class="active-nav"></span>
+        <span class="animate" style="--i:2"></span>
+    </nav>
+</header>    
